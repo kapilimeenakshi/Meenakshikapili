@@ -1,0 +1,29 @@
+quiz=[
+    {
+        "question":"2*5",
+        "options":["a. 5","b. 10", "c. 15", "d. 20"],
+        "answer":"b"
+        },
+    {
+        "question":"Which one of the odd number given below",
+        "options":["a. 20","b. 15","c. 24","d. 30"],
+        "answer":"b"
+        }
+    ]
+def run():
+    score=0
+    print("Welcome to the entrance quiz")
+    print("\n")
+    for i,q in enumerate(quiz):
+        print(f"Q{i+1}:{q['question']}")
+        for option in q['options']:
+            print(option)
+        answer=input("Enter your answer:")
+        if answer==q["answer"]:
+            print("Correct","Your answer is correct\n")
+            score+=1
+        else:
+            print("Wrong!\n")
+    print(f"Quiz Completed! Your Score:{score}/{len(quiz)}")
+if __name__ == "__main__":
+    run()# Meenakshikapili
