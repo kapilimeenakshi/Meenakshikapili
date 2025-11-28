@@ -26,4 +26,4 @@ def run():
             print("Wrong!\n")
     print(f"Quiz Completed! Your Score:{score}/{len(quiz)}")
 if __name__ == "__main__":
-    run()# Meenakshikapili
+    run()
